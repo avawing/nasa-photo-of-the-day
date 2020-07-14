@@ -1,0 +1,38 @@
+.hidden{
+    display: none;
+}
+
+.navContainer{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.headerNav{
+
+    height: 100vh;
+    width: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    background: #007EA7;
+    background: -moz-radial-gradient(center, #007EA7 0%, #003459 0%, #00171F 100%);
+    background: -webkit-radial-gradient(center, #007EA7 0%, #003459 0%, #00171F 100%);
+    background: radial-gradient(ellipse at center, #007EA7 0%, #003459 0%, #00171F 100%);
+    
+    opacity: 80%;
+
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.headerNav a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.headerNav span{
+    transition: 0.3s;
+}

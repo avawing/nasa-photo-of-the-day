@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background: #00171F;
+    background: -moz-linear-gradient(top, #00171F 0%, #003459 52%, #007EA7 100%);
+    background: -webkit-linear-gradient(top, #00171F 0%, #003459 52%, #007EA7 100%);
+    background: linear-gradient(to bottom, #00171F 0%, #003459 52%, #007EA7 100%);
+    
+}
+
+h1{
+    font-family: 'Monoton', cursive;
+    color: white;
+}
