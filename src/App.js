@@ -1,4 +1,5 @@
 import React from "react";
+import {render} from 'react-dom';
 import "./App.css";
 
 function App() {
@@ -11,5 +12,5 @@ function App() {
     </div>
   );
 }
-
+render(<App />, document.querySelector("root"));
 export default App;
