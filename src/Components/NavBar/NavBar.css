@@ -1,25 +1,26 @@
 .hidden{
     display: none;
 }
-
 .navContainer{
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+
 }
-
 .headerNav{
-
-    height: 100vh;
+    display: none;
+    position: relative;
+    height: 0;
     width: 0;
     color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-around;
 
-    background: #007EA7;
-    background: -moz-radial-gradient(center, #007EA7 0%, #003459 0%, #00171F 100%);
-    background: -webkit-radial-gradient(center, #007EA7 0%, #003459 0%, #00171F 100%);
-    background: radial-gradient(ellipse at center, #007EA7 0%, #003459 0%, #00171F 100%);
+    background: #00171F;
+    background: -moz-linear-gradient(bottom, #00171F 0%, #003459 52%, #007EA7 100%);
+    background: -webkit-linear-gradient(bottom, #00171F 0%, #003459 52%, #007EA7 100%);
+    background: linear-gradient(to top, #00171F 0%, #003459 52%, #007EA7 100%);
     
     opacity: 80%;
 
@@ -30,9 +31,5 @@
 .headerNav a{
     color: white;
     text-decoration: none;
-    transition: 0.3s;
-}
-
-.headerNav span{
     transition: 0.3s;
 }

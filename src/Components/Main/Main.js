@@ -26,7 +26,7 @@ const {data, setDate} = props
             </div>
         </div>
     </div>
-        <Buttons setDate = {setDate}/>
+        <Buttons data = {data} setDate = {setDate}/>
         <Footer data = {data}/>
         </>
     )

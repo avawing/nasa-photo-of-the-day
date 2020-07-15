@@ -15,14 +15,16 @@ function App() {
     axios
     .get(`${website}&date=${date}`)
     .then(result => {
-      console.log(result)
+      if(result.data.media_type !== 'image'){
+        
+      }
      setData(result.data)
       
     })
     .catch(e => {
       console.log(`There was an errow: ${e}`)
     })
-  },[])
+  },[website, date])
 
 //call API with 
 

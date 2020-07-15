@@ -1,10 +1,16 @@
 import React from 'react';
 
-let DateGenerator = require('random-date-generator')
 
-let randomDate = null; 
+
+
+
+function Buttons(props){
+
+    let DateGenerator = require('random-date-generator')
+    let randomDate = null;
+
     function dateGenerator(props){
-        const setDate = props
+        const {setDate} = props
         let today = new Date();
         let dd = String(today.getDate()).padStart(2, '0');
         let mm = String(today.getMonth()+1).padStart(2, '0');
@@ -20,27 +26,22 @@ let randomDate = null;
         let nyyy = randomDate.getFullYear()
 
         randomDate = `${nyyy}-${nm}-${nd}`
+        console.log(randomDate)
 
-        setDate(randomDate)
+        return setDate(randomDate)
       
-        console.log((randomDate))
-      }
-
-function Buttons(){
     
-
+    
+    }
     
 
 
     return(
-
-<div className = "buttons">
+    <div className = "buttons">
     <button> Previous </button>
-    
-    <button onClick = {dateGenerator}>Explore</button>
-    
+    <button onClick = {()=>{dateGenerator(props)}}>Explore</button>
     <button> Next </button> 
-        </div>
+    </div>
     )
 }
 
