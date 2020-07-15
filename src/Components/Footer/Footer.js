@@ -1,6 +1,7 @@
 import React from 'react'
 
-function Footer(){
+function Footer(props){
+    const data = props;
     return (
         <div>
             <footer>
@@ -10,7 +11,7 @@ function Footer(){
                 <a href = "https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules/anchor-is-valid.md">Contact</a>
                 <a href = "https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules/anchor-is-valid.md">About</a>
             </nav>
-            <copyright>2020</copyright>
+            <copyright>{data.copyright}</copyright>
             </footer>
         </div>
     )
