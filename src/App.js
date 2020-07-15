@@ -1,29 +1,28 @@
 import React, {useState, useEffect} from "react";
 import {render} from 'react-dom';
-import {baseUrl, APIKey} from './Components/'
+import {baseURL, APIKey} from './Components/constants'
 import "./App.css";
 import Main from './Components/Main/Main'
 import axios from 'axios';
 function App() {
-    const [data, setData] = useState(null)
-    const [date, setDate] = useState(new Date())
+    const [data, setData] = useState('')
+    const [date, setDate] = useState('')
+
+    const website = `${baseURL}${APIKey}`
+    console.log(website)
 
   useEffect(()=>{
     axios
-    .get(`${baseUrl}/?api_key=/${APIKey}`)
+    .get(`${website}&date=${date}`)
     .then(result => {
-      if(result.data.media_type === 'image'){
-      setData(result.data)
-      console.log('Yes!')
-      }else{
-        console.log('No!')
-      }
+      console.log(result)
+     setData(result.data)
       
     })
     .catch(e => {
       console.log(`There was an errow: ${e}`)
     })
-  },[date])
+  },[])
 
 //call API with 
 

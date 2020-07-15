@@ -11,7 +11,7 @@ function Footer(props){
                 <a href = "https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules/anchor-is-valid.md">Contact</a>
                 <a href = "https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules/anchor-is-valid.md">About</a>
             </nav>
-            <copyright>{data.copyright}</copyright>
+            <p>{data.copyright}</p>
             </footer>
         </div>
     )
