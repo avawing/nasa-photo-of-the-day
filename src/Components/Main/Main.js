@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Jumbotron, Button } from 'reactstrap';
 
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
@@ -12,20 +13,10 @@ const {data, setDate} = props
         <>
         <Header />
         <div>
-            <div className = "title">{data.title}
-            <p>{data.date}</p>
-            </div>
-            <div className = "superContainer">
-            <div className = "container">
-            <div className = "Photo-Container">
-            <img src ={data.url} alt = {data.title}></img>
-            </div>
-            
-            <div className = "Text-Container">
-                <p>{data.explanation}</p>
-            </div>
-            </div>
-        </div>
+      <Jumbotron>
+        <img className="display-3" src = {data.url} alt = {data.title} width = '100%'height = '600vh'/>
+        <p>{data.explanation}</p>
+      </Jumbotron>
     </div>
         <Buttons data = {data} setDate = {setDate}/>
         <Footer data = {data}/>

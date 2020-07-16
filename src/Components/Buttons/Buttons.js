@@ -1,9 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button'
 
-
-
-
 function Buttons(props){
 
     let DateGenerator = require('random-date-generator')
@@ -28,7 +25,6 @@ function Buttons(props){
         let nyyy = randomDate.getFullYear()
 
         randomDate = `${nyyy}-${nm}-${nd}`
-        console.log(randomDate)
 
         return setDate(randomDate)
       
