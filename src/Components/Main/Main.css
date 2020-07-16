@@ -4,6 +4,7 @@
     align-items: center;
 }
 .container{
+    height: 80%;
     width: 90%;
     text-align: center;
     display: grid;
@@ -16,4 +17,5 @@
 
 .container img{
     max-width: 100%;
+    max-height: 100%;
 }

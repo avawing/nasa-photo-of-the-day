@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Button from '@material-ui/core/Button'
 
 
 
@@ -8,6 +8,8 @@ function Buttons(props){
 
     let DateGenerator = require('random-date-generator')
     let randomDate = null;
+
+    
 
     function dateGenerator(props){
         const {setDate} = props
@@ -38,9 +40,9 @@ function Buttons(props){
 
     return(
     <div className = "buttons">
-    <button> Previous </button>
-    <button onClick = {()=>{dateGenerator(props)}}>Explore</button>
-    <button> Next </button> 
+    
+    <Button onClick = {()=>{dateGenerator(props)}}>Explore</Button>
+    
     </div>
     )
 }
