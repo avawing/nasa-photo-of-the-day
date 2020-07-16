@@ -13,13 +13,15 @@ const {data, setDate} = props
         <>
         <Header />
         <div>
+        <Buttons data = {data} setDate = {setDate}/>
       <Jumbotron>
+          <h2 fontColor = 'red'>{data.title}</h2>
         <img className="display-3" src = {data.url} alt = {data.title} width = '100%'height = '600vh'/>
         <p>{data.explanation}</p>
       </Jumbotron>
+      <p>{data.date}</p>
+      <p>{data.copyright}</p>
     </div>
-        <Buttons data = {data} setDate = {setDate}/>
-        <Footer data = {data}/>
         </>
     )
 }
