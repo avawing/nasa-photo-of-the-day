@@ -1,4 +1,10 @@
+.superContainer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
 .container{
+    width: 90%;
     text-align: center;
     display: grid;
     grid-template-columns: 50% 50%;

@@ -15,7 +15,7 @@ const {data, setDate} = props
             <div className = "title">{data.title}
             <p>{data.date}</p>
             </div>
-
+            <div className = "superContainer">
             <div className = "container">
             <div className = "Photo-Container">
             <img src ={data.url} alt = {data.title}></img>
@@ -23,6 +23,7 @@ const {data, setDate} = props
             
             <div className = "Text-Container">
                 <p>{data.explanation}</p>
+            </div>
             </div>
         </div>
     </div>
