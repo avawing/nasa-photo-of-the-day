@@ -15,9 +15,7 @@ function App() {
     axios
     .get(`${website}&date=${date}`)
     .then(result => {
-      if(result.data.media_type !== 'image'){
-        
-      }
+      
      setData(result.data)
       
     })
