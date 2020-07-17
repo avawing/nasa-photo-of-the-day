@@ -1,8 +1,7 @@
 import React from 'react';
-import { Jumbotron, Button } from 'reactstrap';
+import { Jumbotron} from 'reactstrap';
 
 import Header from '../Header/Header'
-import Footer from '../Footer/Footer'
 import Buttons from '../Buttons/Buttons'
 import './Main.css'
 

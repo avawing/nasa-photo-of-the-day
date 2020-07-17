@@ -1,7 +1,6 @@
 import React from 'react';
 import './Header.css'
-import NavBar from '../NavBar/NavBar.js'
-import Profile from '../Profile/Profile.js'
+
 
 export function Header(){
 
@@ -17,7 +16,7 @@ export function Header(){
          
          
     </header>
-    <NavBar />
+
  
 
      
